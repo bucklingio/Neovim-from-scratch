@@ -67,3 +67,12 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- Live Server --
+-- keymap("n", "<Leader>r", ":!live-server --open='%:.' 1>/dev/null 2>&1 &<CR>", opts)
+-- keymap("n", "<Leader><S-r>", ":!pkill -f live-server 1>/dev/null 2>&1 &<CR>", opts)
+keymap("n", "<Leader>r", ":Bracey<CR>", opts)
+keymap("n", "<Leader><S-r>", ":BraceyStop<CR>", opts)
+
+
+-- Set linebreaks to LF --
+keymap("n", "<Leader>u", ":e ++ff=unix<CR>", opts)

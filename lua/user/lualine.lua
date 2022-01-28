@@ -33,8 +33,7 @@ local mode = {
 
 local filetype = {
 	"filetype",
-	icons_enabled = false,
-	icon = nil,
+	icon_only = false,
 }
 
 local branch = {
@@ -65,9 +64,9 @@ end
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "auto",
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
+		theme = "gruvbox_dark",
+		component_separators = { left = "", right = "" },
+		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
 		always_divide_middle = true,
 	},
