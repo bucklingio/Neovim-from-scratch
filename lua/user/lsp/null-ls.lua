@@ -16,7 +16,7 @@ null_ls.setup({
     code_actions.eslint_d.with({ extra_args = { "--resolve-plugins-relative-to=/home/ian/.local/lib" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-    -- diagnostics.eslint_d.with({ extra_args = { "--resolve-plugins-relative-to=/home/ian/.local/lib"}}),
+    diagnostics.eslint_d.with({ extra_args = { "--resolve-plugins-relative-to=/home/ian/.local/lib"}}),
     -- diagnostics.flake8
 	},
   on_attach = function(client)
