@@ -72,6 +72,3 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("n", "<Leader><S-r>", ":!pkill -f live-server 1>/dev/null 2>&1 &<CR>", opts)
 keymap("n", "<Leader>r", ":Bracey<CR>", opts)
 keymap("n", "<Leader><S-r>", ":BraceyStop<CR>", opts)
-
--- Set linebreaks to LF --
-keymap("n", "<Leader>u", ":e ++ff=unix | 1,$s/\r//g<CR>", opts)
